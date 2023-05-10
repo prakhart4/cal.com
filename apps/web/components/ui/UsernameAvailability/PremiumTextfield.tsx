@@ -227,15 +227,15 @@ const PremiumTextfield = (props: ICustomUsernameProps) => {
             }}
             data-testid="username-input"
           />
-          <div className="absolute top-0 right-2 flex flex-row">
+          <div className="absolute top-0 bottom-0 right-2 flex flex-row">
             <span
               className={classNames(
-                "mx-2 py-1",
+                "mx-2 my-auto py-1",
                 isInputUsernamePremium ? "text-orange-400" : "",
                 usernameIsAvailable ? "" : ""
               )}>
-              {isInputUsernamePremium ? <StarIconSolid className="mt-[2px] h-4 w-4" /> : <></>}
-              {!isInputUsernamePremium && usernameIsAvailable ? <Check className="mt-2 h-4 w-4" /> : <></>}
+              {isInputUsernamePremium ? <StarIconSolid className="h-4 w-4" /> : <></>}
+              {!isInputUsernamePremium && usernameIsAvailable ? <Check className="h-4 w-4" /> : <></>}
             </span>
           </div>
         </div>
